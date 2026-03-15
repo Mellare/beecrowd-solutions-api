@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>Beecrowd 1101</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1>Beecrowd 1146 Solution</h1>
+    <pre>
+        <code class="language-python">
+while(True):
+    x = int(input())
+    if x &lt= 0:
+        break
+    else:
+        for i in range(1, x):
+            print(f"{i}".rstrip(), end=" ")
+        print(x)
+        </code>
+    </pre>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body{
+    background-color: antiquewhite;
+    font-family: monospace;
+}
+
+pre {
+    background-color: #282c34;
+    color: #abb2bf;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto; /* Permite scroll horizontal */
+    font-family: 'Consolas', 'Monaco', monospace;
+}
