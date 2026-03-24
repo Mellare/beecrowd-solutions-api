@@ -8,6 +8,8 @@ pre {
     color: #abb2bf;
     padding: 15px;
     border-radius: 8px;
-    overflow-x: auto; /* Permite scroll horizontal */
+    display: flex;
+    justify-content: center;
     font-family: 'Consolas', 'Monaco', monospace;
+    overflow-x: auto;
 }

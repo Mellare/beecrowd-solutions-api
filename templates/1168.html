@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-    <title>Beecrowd 1146</title>
+    <title>Beecrowd 1168</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet"/>
 </head>
 <body>
-    <h1>Beecrowd 1146 Solution</h1>
+    <h1>Beecrowd 1168 Solution</h1>
     <pre class="line-numbers">
-        <code class="language-python">while(True):
-    x = int(input())
-    if x &lt= 0:
-        break
-    else:
-        for i in range(1, x):
-            print(f"{i}".rstrip(), end=" ")
-        print(x)</code>
+        <code class="language-python">led = {"1": 2, "2": 5, "3": 5, "4": 4, "5": 5, "6": 6, "7": 3, "8": 7, "9": 6, "0": 6}
+ativaLaco = True
+while(ativaLaco):
+    try:
+        casoTeste = int(input())
+    except ValueError:
+        continue
+    for i in range(1, casoTeste + 1):
+        soma = 0
+        n = input().replace("", " ").strip().split()
+        for j in n:
+            if j in led.keys():
+                soma += led.get(j)
+        print(f"{soma} leds")
+    ativaLaco = False</code>
     </pre>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
