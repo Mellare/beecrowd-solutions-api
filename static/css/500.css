@@ -1,0 +1,45 @@
+body {
+    font-size: x-large;
+    margin: 0;  
+    min-height: 100vh;       
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 242, 60);
+    border-radius: 6px;
+    box-shadow: 10px 10px 5px rgb(203, 209, 210);
+    height: 250px;
+    animation-name: alert;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.container-btnHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnHome{
+    width: 100px;
+    border-radius: 6px;
+    background-color: rgb(235, 242, 249);
+    cursor: pointer;
+}
+
+@keyframes alert{
+    from{
+        background-color: rgb(3, 152, 35);
+        color: black;
+        scale: 0.5;
+    }
+    to{
+        background-color: rgb(255, 0, 0);
+        color: white;
+        scale: 1.0;
+    }
+}
