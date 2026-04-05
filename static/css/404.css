@@ -29,6 +29,12 @@ body{
     border-radius: 6px;
     background-color: rgb(235, 242, 249);
     cursor: pointer;
+    border: solid 1px;
+}
+
+#btnHome:hover{
+    animation-name: animation-btn;
+    animation-duration: 1.3s;
 }
 
 @keyframes alert{
@@ -41,5 +47,12 @@ body{
         background-color: rgb(255, 0, 0);
         color: white;
         scale: 1.0;
+    }
+}
+
+@keyframes animation-btn{
+    to{
+        scale: 1.2;
+        background-color:rgb(168, 173, 178);
     }
 }
